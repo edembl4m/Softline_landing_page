@@ -1,0 +1,71 @@
+.main-banner {
+    height: 600px;
+    width: 100%;
+    background: url('img/mainBanner.png') center no-repeat;
+    padding: 158px 0px 0px 70px;
+
+    &__wrapper {
+        width: 709px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__title {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        width: 110px;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 20px;
+        background-color: #B01736;
+        border-radius: 8px;
+        transition: all 0.2s;
+    
+        &:hover {
+            background-color: #D43152;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .main-banner {
+        height: 300px;
+        padding: 40px 0px 0px 5px;
+        background-size: cover;
+
+        &__wrapper {
+            width: 280px;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 28px;
+            line-height: 100%;
+        }
+
+        &__btn {
+            height: 32px;
+            width: 110px;
+            font-size: 16px;
+            line-height: 19.49px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main-banner {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+}
