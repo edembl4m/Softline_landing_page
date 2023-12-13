@@ -1,7 +1,28 @@
-body {
-    font-family: 'Proxima Nova Condensed';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.test {
-    color: $hcolor;
+body {
+    box-sizing: border-box;
+    font-family: 'Proxima Nova Condensed';
+    color: #444444;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        margin: 0px 15px 0px 15px;
+    }
 }
