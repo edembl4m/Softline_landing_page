@@ -1,0 +1,88 @@
+%mission-bg {
+    content: '';
+    background-image: url('img/missionBg.svg');
+    height: 376.95px;
+    width: 348.05px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.mission {
+    width: 100%;
+    background-color: #A30C33;
+    padding: 139px 80px 139px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    color: #ffff;
+    position: relative;
+    overflow: hidden;
+
+    &__title {
+        z-index: 1;
+    }
+
+    &__text {
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &::before {
+        @extend %mission-bg;
+        left: -42px;
+        right: auto;
+    }
+
+    &::after {
+        @extend %mission-bg;
+        left: auto;
+        right: -42px;
+        transform: rotate(180deg);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    %mission-bg {
+        background-size: cover;
+        width: 142.54px;
+        height: 154.37px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .mission {
+        min-height: 186px;
+        padding: 32px 5px 32px 5px;
+        gap: 10px;
+    
+        &__text {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    
+        &::before {
+            @extend %mission-bg;
+            left: -48px;
+            right: auto;
+        }
+    
+        &::after {
+            @extend %mission-bg;
+            left: auto;
+            right: -34px;
+            transform: rotate(180deg);
+        }
+    }
+}
