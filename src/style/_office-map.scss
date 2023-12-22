@@ -1,11 +1,12 @@
 .office-map {
     padding: 100px 0px 100px 0px;
     font-weight: 600;
+    position: relative;
 
     &__menu {
         width: 100%;
         height: 80px;
-        padding: 0px 49px 0px 49px;
+        padding: 0px 70px 0px 70px;
         margin-bottom: 90px;
         box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.06);
         display: flex;
@@ -38,6 +39,7 @@
         gap: 30px;
         font-size: 18px;
         line-height: 20px;
+        z-index: 4;
 
         &-item {
             height: 100%;
@@ -54,11 +56,58 @@
 
     &__map {
         width: 100%;
-        // max-width: 1110px;
         height: 604px;
-        // overflow: scroll;
         background: url('img/map.jpg') center no-repeat;
-        // background-size: contain;
         border: 1px solid black;
+    }
+
+    &__submenu {
+        font-family: 'Proxima Nova';
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        display: flex;
+        gap: 23px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.06);
+        padding: 30px 0px 30px 70px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 0;
+        transition: all 0.3s;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &-title {
+                font-size: 18px;
+                line-height: 20px;
+                font-family: 'Proxima Nova';
+                cursor: pointer;
+            }
+
+            .submenu-item-active {
+                color: $customRed;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .submenu-active {
+        visibility: visible;
+        opacity: 100;
+        top: 210px;
     }
 }
