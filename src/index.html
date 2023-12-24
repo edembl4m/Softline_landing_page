@@ -62,15 +62,15 @@
             <div class="office-map__menu">
                 <div class="office-map__btn">Офисы Softline <span class="office-map__btn-arrow"></span></div>
                 <ul class="office-map__list">
-                    <li class="office-map__list-item active">Все</li>
-                    <li class="office-map__list-item">Москва</li>
-                    <li class="office-map__list-item">Ценр</li>
-                    <li class="office-map__list-item">Северо-Запад</li>
-                    <li class="office-map__list-item">Юг</li>
-                    <li class="office-map__list-item">Волга</li>
-                    <li class="office-map__list-item">Урал</li>
-                    <li class="office-map__list-item">Сибирь</li>
-                    <li class="office-map__list-item">Дальний восток</li>
+                    <li class="office-map__list-item active" id="allCity">Все</li>
+                    <li class="office-map__list-item" id="moscow">Москва</li>
+                    <li class="office-map__list-item" id="center">Ценр</li>
+                    <li class="office-map__list-item" id="northwest">Северо-Запад</li>
+                    <li class="office-map__list-item" id="south">Юг</li>
+                    <li class="office-map__list-item" id="volga">Волга</li>
+                    <li class="office-map__list-item" id="ural">Урал</li>
+                    <li class="office-map__list-item" id="siberia">Сибирь</li>
+                    <li class="office-map__list-item" id="farEast">Дальний восток</li>
                 </ul>
             </div>
             <ul class="office-map__submenu">
@@ -141,7 +141,40 @@
             </ul>
             <div class="office-map__map">
                 <div class="office-map__map-main" id="draggable">
-                    <div class="office-map__map-mark"></div>
+                    <div class="office-map__map-mark moscow" id="mosc"></div>
+
+                    <div class="office-map__map-mark mark-show center" id="yaroslavl"></div>
+                    <div class="office-map__map-mark mark-show center" id="voronezh"></div>
+                    <div class="office-map__map-mark mark-show center" id="belgorod"></div>
+
+                    <div class="office-map__map-mark mark-show northwest" id="kaliningrad"></div>
+                    <div class="office-map__map-mark mark-show northwest" id="spb"></div>
+                    
+                    <div class="office-map__map-mark mark-show south" id="rostov-on-don"></div>
+                    <div class="office-map__map-mark mark-show south" id="volgograd"></div>
+                    <div class="office-map__map-mark mark-show south" id="krasnodar"></div>
+                    
+                    <div class="office-map__map-mark mark-show volga" id="nizhny-novgorod"></div>
+                    <div class="office-map__map-mark mark-show volga" id="samara"></div>
+                    <div class="office-map__map-mark mark-show volga" id="kazan"></div>
+                    <div class="office-map__map-mark mark-show volga" id="ufa"></div>
+                    <div class="office-map__map-mark mark-show volga" id="orenburg"></div>
+
+                    <div class="office-map__map-mark mark-show ural" id="izhevsk"></div>
+                    <div class="office-map__map-mark mark-show ural" id="perm"></div>
+                    <div class="office-map__map-mark mark-show ural" id="surgut"></div>
+                    <div class="office-map__map-mark mark-show ural" id="tyumen"></div>
+                    <div class="office-map__map-mark mark-show ural" id="chelyabinsk"></div>
+                    <div class="office-map__map-mark mark-show ural" id="ekaterinburg"></div>
+
+                    <div class="office-map__map-mark mark-show siberia" id="omsk"></div>
+                    <div class="office-map__map-mark mark-show siberia" id="novosibirsk"></div>
+                    <div class="office-map__map-mark mark-show siberia" id="tomsk"></div>
+                    <div class="office-map__map-mark mark-show siberia" id="krasnoyarsk"></div>
+                    <div class="office-map__map-mark mark-show siberia" id="irkutsk"></div>
+                    
+                    <div class="office-map__map-mark mark-show far-east" id="khabarovsk"></div>
+                    <div class="office-map__map-mark mark-show far-east" id="vladivostok"></div>
                 </div>
             </div>
         </section>
