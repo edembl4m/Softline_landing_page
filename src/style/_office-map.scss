@@ -89,9 +89,15 @@
                 line-height: 20px;
                 font-family: 'Proxima Nova';
                 cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: $customRed;
+                }
+
             }
 
-            .submenu-item-active {
+            .active {
                 color: $customRed;
             }
 
